@@ -1,2 +1,11 @@
 hazelcast:
   cluster-name: my-cluster
+  network:
+    # https://docs.hazelcast.com/imdg/4.2/clusters/discovery-mechanisms
+    join:
+      multicast:
+        enabled: true
+  integrity-checker:
+    enabled: false
+  jet:
+    enabled: false
